@@ -121,6 +121,8 @@ const personalMovieDB = {
         i--;
     } else if (lastFilm.length > 50) {
         i--;
+    } else if (lastFilm === null) {
+        i--;
     } else {
         personalMovieDB.movies[lastFilm] = prompt('На сколько цените его?', "");
     }
